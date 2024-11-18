@@ -2,10 +2,19 @@
   "name": "task_management_app",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node backend/server.js",
+    "nodemon": "nodemon backend/server.js"
   },
   "author": "Adam Bayraktar",
   "license": "ISC",
-  "description": "An app where you can manage your tasks"
+  "description": "An app where you can manage your tasks",
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
 }
