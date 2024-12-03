@@ -1,0 +1,72 @@
+/* Register Page Styling */
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #f5f9fc;
+  margin-top: 3%;
+}
+
+.register-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.register-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.register-page input {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.register-page button {
+  padding: 0.8rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.register-page button:hover {
+  background-color: #0056b3;
+}
+
+.register-page p {
+  font-size: 1rem;
+  color: #28a745; /* Green for success message */
+}
+
+.register-page .error {
+  color: #dc3545; /* Red for error message */
+}
+
+.register-page .btn-login {
+  padding: 0.8rem;
+  margin: 0;
+  text-align: center;
+  font-weight: normal;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  line-height: normal;
+}
+
+.register-page .btn-login:hover {
+  background-color: #5a6268;
+}
