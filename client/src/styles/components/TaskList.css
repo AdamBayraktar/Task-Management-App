@@ -1,0 +1,53 @@
+/* Task List */
+.task-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.task-card {
+  background-color: #ffffff; /* White card */
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 1rem); /* Responsive grid for desktop */
+  min-width: 280px; /* Minimum width for mobile */
+}
+
+.task-card h3 {
+  margin-bottom: 0.5rem;
+  color: #007bff;
+}
+
+.task-card p {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.task-card .status {
+  font-size: 0.9rem;
+  color: #28a745; /* Green for completed */
+}
+
+.task-card .status.pending {
+  color: #ffc107; /* Yellow for pending */
+}
+
+.task-card button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.task-card button.edit {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.task-card button.delete {
+  background-color: #dc3545;
+  color: #ffffff;
+}
