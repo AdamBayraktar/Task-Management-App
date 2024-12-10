@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/main.css";
+import "styles/components/AddTaskButton.css";
 
 const AddTaskButton = ({ onClick }) => {
   return (
