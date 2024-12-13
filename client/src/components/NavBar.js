@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "styles/components/NavBar.css";
 
 const Navbar = () => {
+  const [isLogged, setLogged] = useState(!!localStorage.getItem("token"));
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    setLogged(false);
+  };
+
   return (
     <nav className="navbar">
-      {!localStorage.getItem("token") ? (
+      {!isLogged ? (
         <>
           <Link to="/">Home</Link>
           <Link to="/login">Login</Link>
@@ -15,11 +22,7 @@ const Navbar = () => {
         <>
           <Link to="/dashboard">Tasks</Link>
           <Link to="/profile">Profile</Link>
-          <Link
-            to="/logout"
-            onClick={() => localStorage.removeItem("token")}
-            className="logout"
-          >
+          <Link to="/" onClick={handleLogout} className="logout">
             Logout
           </Link>
         </>
